@@ -7,7 +7,8 @@ module DlDashboardTopic
     def index
       response.headers['Access-Control-Allow-Origin'] = '*'
       response.headers['Access-Control-Allow-Methods'] = 'GET, OPTIONS'
-      response.headers['Access-Control-Allow-Headers'] = '*'
+      response.headers['Access-Control-Allow-Headers'] = 'X-Requested-With, X-CSRF-Token'
+      response.headers['X-Frame-Options'] = "ALLOWALL"
       text = Topic.find(SiteSetting.dashboard_topic_id).first_post.cooked
       render json: {cooked: text}
     end
