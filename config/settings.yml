@@ -1,0 +1,7 @@
+plugins:
+  dashboard_topic_enabled:
+    default: true
+    client: false
+  dashboard_topic_id:
+    default: ""
+    client: false

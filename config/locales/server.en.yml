@@ -1,0 +1,4 @@
+en:
+  site_settings:
+    dashboard_topic_enabled: "Allow an external site to use the cooked text of a topic."
+    dashboard_topic_id: "ID number of the topic to use."
